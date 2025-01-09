@@ -6,9 +6,13 @@
     text-align: center;
  }
  h1{
-    color :skyblue ;
+    color :white ;
  }
  h2{
     color :red;
+ }
+
+ ul {
+    list-style-type: none;
  }
  
