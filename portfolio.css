@@ -1,5 +1,10 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'montserrat', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
@@ -21,7 +26,10 @@ body::before{
     height: 100%;
     background: rgba(0,0,0,0.6);
     z-index: -1;
+    margin: 0;
+    padding: 0;
 }
+
 .container{
     position: relative;
     z-index: 1;
@@ -29,20 +37,31 @@ body::before{
     padding: 20px;
     border-radius: 10px;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0px;
+    padding: 10px;
+}
 
 
 h1, h2 {
+
     text-align: center;
     color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 1.2em;
 }
 
-h1 {
-    margin-top: 20px;
-}
 
 ul, ol {
     margin: 20px auto;
@@ -51,10 +70,12 @@ ul, ol {
     background: rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 10px;
+    list-style-type: none;
 }
 
 ul li, ol li {
     margin: 10px 0;
+    text-align: center;
 }
 
 hr {
@@ -113,27 +134,30 @@ form input[type="radio"], form input[type="checkbox"] {
 }
 
 form input[type="submit"] {
+    transition: transform 0.3s, opacity 0.3s;
     display: block;
     width: 100%;
     padding: 10px;
-    background: #444;
+    background: salmon;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background: #333;
+    transform: scale(1.02);
+    opacity: 1;
+    background: darksalmon;
 }
 
 address {
     text-align: center;
-    margin: 20px 0;
+    margin: 0;
 }
 
 address p {
-    margin: 5px 0;
+    margin: 0;
 }
 address a{
     color: salmon;
@@ -141,12 +165,42 @@ address a{
 }
 .center{
     text-align: center;
+    padding: 0;
+}
+.center img {
+    transition:transform 0.3s, opacity 0.3s;
+}
+.center img:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 .center-icons{
     text-align: center;
     padding: 0;
 }
 .center-icons li{
-    display: inline-block;
+    display:inline;
     margin: 0 10px;
 }
+.center-icons img {
+    transition: transform 0.3s, opacity 0.3s;
+}
+.center-icons img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.email {
+    font-size: small;
+}
+
+.dimmed {
+    background-color: rgba(0,0,0,0.3);
+}
+.dimmed > label{
+    color:white;
+}
+.dimmed > li{
+    color:white;
+}
+
