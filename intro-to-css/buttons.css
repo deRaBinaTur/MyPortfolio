@@ -1,0 +1,61 @@
+.Subscribe {
+  background-color: rgb(204, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 16px 10px 16px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: opacity 0.15s;
+  vertical-align: top;
+}
+.Subscribe:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.Subscribe:active {
+  opacity: 0.4;
+}
+.Join {
+  background-color: rgb(255,255,255);
+  padding: 9px 15px 9px 15px;
+  border-color: rgb(6, 95, 212);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  color: rgb(6, 95, 212);
+  font-size: 14px;
+  padding: 9px 15px 9px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.25s, color 0.25s;
+  margin-right: 8px;
+  vertical-align: top;
+}
+.Join:hover {
+  background-color: rgb(6, 95, 212);
+  color: white;
+  cursor: pointer;;
+}
+.Join:active {
+  opacity: 0.5;
+}
+.Tweet {
+  background-color: rgb(29, 155, 240);
+  color: rgb(255,255,255);
+  border: none;
+  border-radius:20px;
+  padding: 7px 16px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: box-shadow 0.15s, opacity 0.15s;
+  line-height: 22.5px;
+  vertical-align: top;
+}
+.Tweet:hover {
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.Tweet:active {
+  opacity: 0.5;
+}
