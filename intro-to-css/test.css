@@ -1,12 +1,16 @@
-h2{
-    color: red;
-    font-size: 2.2em;
+.text {
+    width: 100%;
+    max-width: 200px;
+    text-align: center; /* Center-align the text, including the placeholder */
+    padding: 10px; /* Add some padding for better appearance */
+    font-size: 10px; /* Adjust font size */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    outline: none; /* Remove the default focus outline */
+    box-sizing: border-box;
 }
 
-#first-one {
-    color: blue;
-}
-
-.second-one {
-    color: green;
+.text::placeholder {
+    text-align: center; /* Center-align the placeholder text */
+    color: #999;
 }

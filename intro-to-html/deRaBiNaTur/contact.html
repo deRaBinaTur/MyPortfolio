@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../intro-to-css/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>deRaBinaTur</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="website.html"><img class="logo" src="../Website/derabinatur1.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Shop/Pricing</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h2>Contact Us</h2>
+      </div>
+    </section>
+    <!---Contact us------>
+    <section class="contact">
+      <h2>Have Questions? Contact Us Today!</h2>
+      <p>If you have any questions or want to discuss your project, feel free to get in touch with us. We're here to help!</p>
+      <div class="contact-row">
+          <div class="contact-info">
+              <h3>How to Reach Us</h3>
+              <p>Save Djisalova 25, Novi sad, Serbia</p>
+              <p>Email: zivanovicrade36@gmail.com</p>
+              <p>Phone: +381 628662937</p>
+          </div>
+          <div class="contact-form">
+              <h3>Send Us a Message</h3>
+              <form action="#">
+                  <input type="text" placeholder="Your Name" required>
+                  <input type="email" placeholder="Your Email" required>
+                  <textarea placeholder="Your Message" required></textarea>
+                  <button type="submit" class="cta-btn">Send Message</button>
+              </form>
+          </div>
+      </div>
+  </section>
+    
+   
+   
+    <!---Footer--->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>We specialize in creating modern, high-quality websites and digital solutions.<br>  
+        Our goal is to help businesses establish a strong online presence.</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made from <i class="fa fa-heart-o"></i> deRaBinaTur | All Rights Reserved </p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

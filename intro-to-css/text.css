@@ -1,39 +1,48 @@
-p{
-  font-family: Roboto;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.video-title{
+ p{
+  font-family: Arial, Helvetica, sans-serif;
+ }
+.video-title {
   font-weight: bold;
+  width: 287px;
+  height: 48px;
   font-size: 18px;
-  width: 280px;
   line-height: 24px;
-  margin-bottom: 5px;
+  margin-top: 70px;
+  display: block;
+  margin-bottom: 0px;
 }
-.video-stats{
+.video-stats {
+  color: rgb(96, 96, 96);
   font-size: 14px;
-  color: rgb(96, 96, 96);
+  height: 16.8px;
+  width: 284px;
   margin-bottom: 20px;
+  display: block;
+  margin-top: 5px;
 }
-.video-author{
-  color: rgb(96, 96, 96);
-  margin-bottom: 20px;
-}
-.video-description{
+.channel-name {
+  display: block;
+  color:rgb(96, 96, 96);
   font-size: 14px;
-  color: rgb(96, 96, 96);
-  width: 280px;
-  line-height: 22px;
-  margin-bottom: 100px;
+  height: 19.2px;
 }
-.apple-text{
-  margin-bottom: 50px;
+.video-description {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  height: 60px;
+  width: 284px;
+  color: rgb(96, 96, 96);
+}
+.apple-text {
+  font-size: 14px;
   background-color: rgb(227, 65, 64);
-  color: white;
-  padding: 18px 18px 18px 18px;
+  color: rgb(255,255,255);
   text-align: center;
+  padding: 18px 18px 18px 18px;
+  margin-top: 50px;
 }
-.Shop:hover{
+.Shop:hover {
   text-decoration: underline;
   cursor: pointer;
 }
