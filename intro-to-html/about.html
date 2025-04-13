@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../intro-to-css/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>deRaBinaTur</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="website.html"><img class="logo" src="../Website/derabinatur1.png"></a>
+        <div class="nav-links closed" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="website.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="prices.html">Shop/Pricing</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h2>About Us</h2>
+      </div>
+    </section>
+    <!---About Us----->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Who We Are</h1>
+          <p>At deRaBinaTur, we are dedicated to delivering high-quality web solutions tailored to your needs.  
+            With a passion for technology and innovation, we specialize in creating responsive,  
+            user-friendly websites that help businesses and individuals establish a strong digital presence.  
+            Our expertise spans web development, design, and programming, ensuring that every project  
+            we undertake is built with precision, creativity, and functionality in mind.</p>
+         <p>We believe that a well-designed website is more than just an online presence—it’s a powerful tool  
+            that drives engagement, boosts credibility, and enhances user experience. Whether you need  
+            a personal portfolio, a business website, or a custom web application, we are here to turn  
+            your vision into reality.</p>
+             <a href="" class="hero-btn red-btn">Start Your Journey</a>
+        </div>
+        <div class="about-col">
+          <img src="../Website/pexels-kevin-ku-92347-577585.jpg">
+        </div>
+      </div>
+    </section>
+    <!---Footer--->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>We specialize in creating modern, high-quality websites and digital solutions.<br>  
+        Our goal is to help businesses establish a strong online presence.</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made from <i class="fa fa-heart-o"></i> deRaBinaTur | All Rights Reserved </p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navlinks.classList.remove("closed");
+        navLinks.style.right = "0";
+        navlinks.classList.add("open");
+      }
+
+      function hideMenu(){
+        navlinks.classList.remove("open");
+        navLinks.style.right = "-200px";
+        navlinks.classList.add("closed");
+      }
+    </script>
+  </body>
+</html>

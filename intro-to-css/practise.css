@@ -1,0 +1,121 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../Sale/mojaslika.jpeg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-image: url('../Website/background-image.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  padding: 40px;
+  border-radius: 10px;
+  opacity: 0.5;
+  box-shadow: 0 8px 15px rgba(0,0,0.3);
+  overflow: hidden;
+  margin-left: 400px;
+}
+#rade,
+#godine,
+#prezime {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 20px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #fff;
+}
+#dugme {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 15px;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#dugme:hover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+#musko,
+#zensko {
+  margin: 10px 15px;
+}
+label[for="musko"],
+label[for="zensko"] {
+  font-size: 17px;
+  color: #fff;
+}
+.select {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #fff;
+  appearance: none;
+}
+.select option {
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+}
+.select:focus {
+  outline: none;
+  border-color: #0073e6;
+}
+.label {
+  display: block;
+  margin: 10px 65px;
+  font-size: 16px;
+  color: #fff;
+}
+.header {
+  background-color: transparent;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 5px;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0 20px;
+}
+nav ul li {
+  margin: 0 15px; 
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.0rem;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+nav ul li a:hover {
+  color: #0073e6;
+}

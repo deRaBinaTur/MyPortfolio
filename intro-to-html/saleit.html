@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" type="text/css" href="../intro-to-css/saleit.css">
+  <script src="../saleit.js" defer></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Sale IT</title>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="saleit.html"><img class="logo" src="../Sale/bbe1e544-eaea-49bb-b128-ef23358275a0.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Welcome to<span class="name"> SALEIT</span> | Web & Software Development</h1>
+       <p>At SALEIT, we deliver custom software solutions designed to elevate your business.<br>
+       From web development to seamless bug fixing, our team ensures top-quality results that drive success in the digital age.</p>       
+        <a href="" class="hero-btn">Get Started with Us</a>
+    </div>
+  </section> 
+ 
+  <section class="offer">
+    <h2>Explore Our Services </h2>
+    <p>We offer professional web development, design, and programming solutions tailored to your needs.</p>
+      <div class="row">
+        <div class="offer-col">
+          <h3>Web Development & Design</h3>
+          <p>We create stunning, responsive websites that look great and function flawlessly on any device.</p>
+        </div>
+        <div class="offer-col">
+          <h3>App Development</h3>
+          <p>From simple tools to complex applications, we build custom solutions to meet your needs.</p>
+      </div>
+      <div class="offer-col">
+        <h3>Expert Consulting</h3>
+        <p>Need guidance? We offer expert advice to help you bring your digital ideas to life.</p>
+      </div>
+    </div>
+  </section>
+  <section id="web-development" class="development">
+    <h1>Web Development & Design</h1>
+    <p>Our team of expert developers and designers create custom websites that are tailored to your business needs. We use the latest technologies to build responsive, user-friendly sites that look great on any device.</p>
+     <div class="container">
+      <div class="inside-text">
+        <h2>Empower Your Business with Expert Web Development</h2>
+       <p>
+          In today's digital world, a well-crafted website is more than just an online presence—it's your brand's identity. 
+          We specialize in creating high-performance, visually stunning, and user-friendly websites tailored to your needs. 
+          Whether you need a sleek portfolio, a powerful e-commerce platform, or a dynamic web application, we've got you covered. 
+          Let us turn your vision into reality with cutting-edge technologies and seamless user experiences.
+      </p>  
+        </div>
+      <div class="inside-img">
+          <img src="../Sale/pexels-thisisengineering-3861958.jpg" alt="web development" class="web-development-img">
+      </div>
+     </div>
+  </section>
+  
+  <section id="app-development" class="development">
+    <h1>App Development</h1>
+    <p>From simple tools to complex applications, we build custom solutions to meet your needs.</p>
+  </section>
+  
+  <section id="expert-consulting" class="development">
+    <h1>Expert Consulting</h1>
+    <p>Need guidance? We offer expert advice to help you bring your digital ideas to life.</p>
+  </section>
+  
+  
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const offerCols = document.querySelectorAll('.offer-col');
+
+      offerCols.forEach(col => {
+        col.addEventListener('click', function() {
+          const targetId = col.getAttribute('data-target');
+          const targetSection = document.querySelector(targetId);
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

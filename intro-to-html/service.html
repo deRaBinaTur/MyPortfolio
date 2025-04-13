@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../intro-to-css/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>deRaBinaTur</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="website.html"><img class="logo" src="../Website/derabinatur1.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="website.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="prices.html">Shop/Pricing</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h2>Our Services</h2>
+      </div>
+    </section>
+    
+    <section class="offer">
+      <h2>What We Offer</h2>
+      <p>We provide top-notch services to help you build your digital presence and grow your business.</p>
+      <div class="row">
+        <div class="offer-col">
+          <h3>Innovative Web Development</h3>
+            <p>We don't just build websites, we create digital experiences.
+              <br> From dynamic websites to robust web applications, we ensure your online presence is strong, adaptable, and future-proof, helping you stay ahead in a fast-paced digital world.</p>
+        </div>
+
+        <div class="offer-col">
+          <h3>Creative Web Design</h3>
+          <p>We craft visually stunning websites with your brand in mind.
+             Our design process prioritizes clarity, creativity, and functionality to ensure your site captures attention, engages users, and delivers an exceptional experience across all devices.</p>
+      </div>
+
+      <div class="offer-col">
+        <h3>Custom Software Development</h3>
+        <p>When off-the-shelf solutions just won't do, we create custom software tailored specifically to your business.
+           Whether you need specialized tools, automation, or a fully integrated system, we provide efficient, scalable solutions that drive your business forward.</p>
+      </div>
+    </div>
+    </section>
+     <!----SERVICES----->
+   <section class="services">
+    <h1>Our Expertise</h1>
+    <p>Explore our specialized services in web development, design, and optimization. We're here to help you achieve online success.</p>
+    <div class="row">
+      <div class="services-col">
+        <img src="../Website/zena-programer.jpg">
+        <div class="layer">
+          <h3>Custom Website Development</h3>
+        </div>
+      </div>
+      <div class="services-col">
+        <img src="../Website/zena-programer2.jpg">
+        <div class="layer">
+          <h3>User-Centered Design
+          </h3>
+        </div>
+      </div>
+      <div class="services-col">
+        <img src="../Website/zena-programer3.jpg">
+        <div class="layer">
+          <h3>Search Engine Strategy</h3>
+        </div>
+      </div>
+    </div>
+   </section>
+   
+    <!---Footer--->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>We specialize in creating modern, high-quality websites and digital solutions.<br>  
+        Our goal is to help businesses establish a strong online presence.</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made from <i class="fa fa-heart-o"></i> deRaBinaTur | All Rights Reserved </p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
